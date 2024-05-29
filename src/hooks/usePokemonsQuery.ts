@@ -3,7 +3,7 @@ import { getAllPokemons, getPokemon } from "../utils/fetcher";
 
 export const usePokemonsQuery = (offset: number) => {
   return useQuery({
-    queryKey: ["pokemons", "all"],
+    queryKey: ["pokemon", "all"],
     queryFn: () => getAllPokemons(offset, 20),
   });
 };
